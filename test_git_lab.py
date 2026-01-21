@@ -6,6 +6,7 @@ from git_lab import (
     calculate_triangle_area,
     is_prime,
     add_numbers,
+    subtract_numbers,
 )
 import math
 
@@ -13,6 +14,10 @@ class TestGitLab(unittest.TestCase):
     def test_add_numbers(self):
         self.assertEqual(add_numbers(2, 3), 5)
         self.assertEqual(add_numbers(-1, 1), 0)
+
+    def test_subtract_numbers(self):
+        self.assertEqual(subtract_numbers(2, 3), -1)
+        self.assertEqual(subtract_numbers(-1, 1), -2)
 
 class TestUtils(unittest.TestCase):
 
